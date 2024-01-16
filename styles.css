@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Century Gothic, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    display: flex;
 }
 
 .container {
@@ -17,16 +18,48 @@ body {
     grid-gap: 20px;
 }
 
+body {
+    font-family: Century Gothic, sans-serif;
+    background-image: url(https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149152315.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705276800&semt=ais);
+    margin: 0;
+}
+
+#user-list {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .user-block {
+    width: 48%;
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 15px;
     transition: transform 0.3s ease-in-out;
-    text-align: center;
-    width: 50%;
-    height: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-block p {
+    margin: 0 0 10px;
+}
+
+.user-block button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .user-block {
+        width: 100%;
+    }
 }
 
 .user-block:hover {
@@ -54,66 +87,92 @@ body {
     background-color: #2980b9;
 }
 
-.user-posts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid-gap: 20px;
+body {
+    font-family: Century Gothic, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+#user-posts {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .post-block {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
+    position: relative;
+    width: 18%;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
     box-sizing: border-box;
-    transition: transform 0.3s ease-in-out;
-    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
-.post-block:hover {
-    transform: scale(1.05);
+.post-block p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #333333;
 }
 
 .post-block button {
-    display: block;
-    width: 100%;
-    padding: 8px;
     background-color: #3498db;
-    color: #fff;
+    color: #ffffff;
     border: none;
+    padding: 8px 12px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    margin-top: 10px;
+    margin-top: auto;
 }
 
 .post-block button:hover {
     background-color: #2980b9;
 }
 
-#post-details,
-#comments {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 50%;
-    box-sizing: border-box;
+@media (max-width: 768px) {
+    .post-block {
+        width: 100%;
+    }
 }
 
-.comment-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
+body {
+    font-family: Century Gothic, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.post-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.post-details,
+.comments {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-details:hover,
+.comments:hover {
+    transform: scale(1.05);
 }
 
 .comment-block {
-    background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -121,8 +180,6 @@ body {
     transform: scale(1.05);
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+.comment-block p {
+    margin: 5px 0;
 }
