@@ -4,6 +4,7 @@ async function getUsers() {
     return users;
 }
 
+
 async function displayUsers() {
     const users = await getUsers();
     const userList = document.getElementById('user-list');
