@@ -54,6 +54,7 @@ body {
     padding: 8px 12px;
     border-radius: 4px;
     cursor: pointer;
+    width: 120%;
 }
 
 @media (max-width: 768px) {
@@ -170,7 +171,7 @@ body {
 }
 
 .comment-block {
-    border: 1px solid #ddd;
+    border: 1px darkgrey;
     padding: 10px;
     margin: 10px 0;
     transition: transform 0.3s ease-in-out;
